@@ -3,9 +3,9 @@ import sympy as sp # Імпортування бібліотеки sympy, нео
 def get_xl_xg_xh(function_values):
     # Сортування індексів за значенням функції
     sorted_indices = sorted(range(len(function_values)), key=lambda i: function_values[i])
-    xl = sorted_indices[0] # Індекс найменшої за значенням точки
-    xg = sorted_indices[-2] # Індекс наступної за найбільшим значенням точки
-    xh = sorted_indices[-1] # Індекс найбільшої за значенням точки
+    xl = sorted_indices[0] # Індекс найменшої за значенням функції точки
+    xg = sorted_indices[-2] # Індекс наступної за найбільшим значенням функції точки
+    xh = sorted_indices[-1] # Індекс найбільшої за значенням функції точки
     return xl, xg, xh # Повернення результату
 """
 Функція get_xl_xg_xh(function_values) виконує сортування індексів елементів за значенням.
@@ -381,3 +381,4 @@ def main():
 """
 
 main() # Виклик функції main()
+
