@@ -111,13 +111,15 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                 print("-" * 60)
                 print("[УВАГА] - Вдалося досягти збіжності!")
                 print("-" * 60)
-                print("Мінімальна точка:", simplex[xl_index])
+                print("Мінімум функції в точці:", simplex[xl_index])
+                print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                 print("delta =", delta)
                 print("-" * 60)
                 break
             else:
                 print("-" * 60)
                 print("[УВАГА] - Збіжності не досягнуто!\n(Перезапуск циклу...)")
+                input("[УВАГА] - Натисніть клавішу Enter для продовження...")
                 print("-" * 60)
                 continue
 
@@ -133,7 +135,8 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                 print("-" * 60)
                 print("[УВАГА] - Вдалося досягти збіжності!")
                 print("-" * 60)
-                print("Мінімальна точка:", simplex[xl_index])
+                print("Мінімум функції в точці:", simplex[xl_index])
+                print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                 print("delta =", delta)
                 print("-" * 60)
                 break
@@ -165,7 +168,8 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                         print("-" * 60)
                         print("[УВАГА] - Вдалося досягти збіжності!")
                         print("-" * 60)
-                        print("Мінімальна точка:", simplex[xl_index])
+                        print("Мінімум функції в точці:", simplex[xl_index])
+                        print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                         print("delta =", delta)
                         print("-" * 60)
                         break
@@ -191,7 +195,8 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                         print("-" * 60)
                         print("[УВАГА] - Вдалося досягти збіжності!")
                         print("-" * 60)
-                        print("Мінімальна точка:", simplex[xl_index])
+                        print("Мінімум функції в точці:", simplex[xl_index])
+                        print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                         print("delta =", delta)
                         print("-" * 60)
                         break
@@ -227,7 +232,8 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                         print("-" * 60)
                         print("[УВАГА] - Вдалося досягти збіжності!")
                         print("-" * 60)
-                        print("Мінімальна точка:", simplex[xl_index])
+                        print("Мінімум функції в точці:", simplex[xl_index])
+                        print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                         print("delta =", delta)
                         print("-" * 60)
                         break
@@ -253,7 +259,8 @@ def process(function_result, function, simplex, var_names, alpha, beta, gamma, e
                         print("-" * 60)
                         print("[УВАГА] - Вдалося досягти збіжності!")
                         print("-" * 60)
-                        print("Мінімальна точка:", simplex[xl_index])
+                        print("Мінімум функції в точці:", simplex[xl_index])
+                        print("Значення функції в цій точці:", calculating_func(function, simplex, var_names)[0])
                         print("delta =", delta)
                         print("-" * 60)
                         break
@@ -381,4 +388,3 @@ def main():
 """
 
 main() # Виклик функції main()
-
